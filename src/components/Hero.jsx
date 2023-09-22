@@ -6,7 +6,7 @@ import profilepicture from '../assets/profilepicture.jpg'
 
 export default function Hero(){
     return(
-        <section className='flex items-center justify-center gap-16 h-[calc(100vh-80px)] bg-medium-gray font-jetbrains text-navy'>
+        <section className='flex items-center justify-center gap-56 h-[calc(100vh-80px)] bg-medium-gray font-jetbrains text-navy'>
             <div>
                 <span className='flex items-center gap-3'>
                     <a href='https://github.com/AlexMagargiu' target='_blank'><img className="h-8 mb-2" src={githublogo}></img></a>
@@ -34,8 +34,8 @@ export default function Hero(){
                 repeat={Infinity}
                 />
             </div>
-            <div className='h-96 w-96'>
-                <img className='rounded-larger' src={profilepicture}></img>
+            <div className='h-[26rem] w-[26rem]'>
+                <img className='rounded-[3.5rem]' src={profilepicture}></img>
             </div>
         </section>
     )
