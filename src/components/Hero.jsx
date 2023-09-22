@@ -34,7 +34,7 @@ export default function Hero(){
                 repeat={Infinity}
                 />
             </div>
-            <div className='h-[26rem] w-[26rem]'>
+            <div className='h-[26rem] w-[26rem] drop-shadow-[0_5px_10px_rgba(53,_162,_159,_0.7)]'>
                 <img className='rounded-[3.5rem]' src={profilepicture}></img>
             </div>
         </section>
