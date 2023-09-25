@@ -3,7 +3,7 @@ import webimg from "../assets/webdev.png"
 export default function About(){
     return(
         <section className="flex items-center justify-center gap-36 bg-white h-[calc(100vh-200px)] font-jetbrains text-navy">
-            <img src={webimg} className="rounded-[4rem] h-[28rem] w-[28rem] drop-shadow-[0_5px_10px_rgba(53,_162,_159,_0.7)]"></img>
+            <img src={webimg} className="rounded-[4rem] drop-shadow-[0_5px_10px_rgba(53,_162,_159,_0.7)]"></img>
             <div className="flex flex-col items-start justify-center gap-2">
                 <h3 className="text-4xl text-navy-blue-soft">About Me</h3>
                 <p className="max-w-2xl mb-2">

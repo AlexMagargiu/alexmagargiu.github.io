@@ -12,7 +12,14 @@ export default function App() {
       <Hero />
       <About />
       <Skills />
-      <Projects img={toDoAppImg} />
+      <Projects 
+        img={toDoAppImg} 
+        framework={false} 
+        tailwind={false} 
+        title="ToDo App" 
+        codeLink="https://github.com/AlexMagargiu/FM-TD-App"
+        liveLink="https://alexmagargiu.github.io/FM-TD-App/"
+      />
     </main>
   )
 }
