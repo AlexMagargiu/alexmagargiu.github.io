@@ -23,8 +23,8 @@ export default function App() {
               framework={false} 
               tailwind={false} 
               title="Portfolio" 
-              codeLink="https://github.com/AlexMagargiu/FM-TD-App"
-              liveLink="https://alexmagargiu.github.io/FM-TD-App/"
+              codeLink="https://github.com/AlexMagargiu/alexmagargiu.github.io"
+              liveLink="https://alexmagargiu.github.io/"
             />
             <Projects 
               img={toDoAppImg} 
