@@ -20,8 +20,8 @@ export default function App() {
       <section className="flex flex-wrap items-center justify-center px-10 gap-20 text-white font-jetbrains bg-medium-gray">
             <Projects 
               img={portfolioImg} 
-              framework={false} 
-              tailwind={false} 
+              framework={true} 
+              tailwind={true} 
               title="Portfolio" 
               codeLink="https://github.com/AlexMagargiu/alexmagargiu.github.io"
               liveLink="https://alexmagargiu.github.io/"
