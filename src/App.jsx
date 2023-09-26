@@ -7,7 +7,7 @@ import toDoAppImg from "./assets/projectPhotos/toDoApp.jpg"
 import calculatorAppImg from "./assets/projectPhotos/calculatorApp.jpg"
 import tipAppImg from "./assets/projectPhotos/tipApp.jpg"
 import signUpFormImg from "./assets/projectPhotos/signUpForm.jpg"
-import portfolioImg from "./assets/projectPhotos/portofolio.png"
+import portfolioImg from "./assets/projectPhotos/portfolio.png"
 
 export default function App() {
   return (
