@@ -7,6 +7,7 @@ import toDoAppImg from "./assets/projectPhotos/toDoApp.jpg"
 import calculatorAppImg from "./assets/projectPhotos/calculatorApp.jpg"
 import tipAppImg from "./assets/projectPhotos/tipApp.jpg"
 import signUpFormImg from "./assets/projectPhotos/signUpForm.jpg"
+import portfolioImg from "./assets/projectPhotos/portofolio.png"
 
 export default function App() {
   return (
@@ -17,6 +18,14 @@ export default function App() {
       <Skills />
       <h3 className="text-navy text-3xl py-8 bg-medium-gray flex justify-center">Projects</h3>
       <section className="flex flex-wrap items-center justify-center px-10 gap-20 text-white font-jetbrains bg-medium-gray">
+            <Projects 
+              img={portfolioImg} 
+              framework={false} 
+              tailwind={false} 
+              title="Portfolio" 
+              codeLink="https://github.com/AlexMagargiu/FM-TD-App"
+              liveLink="https://alexmagargiu.github.io/FM-TD-App/"
+            />
             <Projects 
               img={toDoAppImg} 
               framework={false} 
