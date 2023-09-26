@@ -8,6 +8,8 @@ import calculatorAppImg from "./assets/projectPhotos/calculatorApp.jpg"
 import tipAppImg from "./assets/projectPhotos/tipApp.jpg"
 import signUpFormImg from "./assets/projectPhotos/signUpForm.jpg"
 import portfolioImg from "./assets/projectPhotos/portfolio.png"
+import notesAppImg from "./assets/projectPhotos/notesApp.png"
+import Contact from "./components/Contact"
 
 export default function App() {
   return (
@@ -17,7 +19,7 @@ export default function App() {
       <About />
       <Skills />
       <h3 className="text-navy text-3xl py-8 bg-medium-gray flex justify-center">Projects</h3>
-      <section className="flex flex-wrap items-center justify-center px-10 gap-20 text-white font-jetbrains bg-medium-gray">
+      <section className="flex flex-wrap items-center justify-center px-10 pb-20 gap-20 text-white font-jetbrains bg-medium-gray">
             <Projects 
               img={portfolioImg} 
               framework={true} 
@@ -25,6 +27,14 @@ export default function App() {
               title="Portfolio" 
               codeLink="https://github.com/AlexMagargiu/alexmagargiu.github.io"
               liveLink="https://alexmagargiu.github.io/"
+            />
+            <Projects 
+              img={notesAppImg} 
+              framework={true} 
+              tailwind={false} 
+              title="Notes App" 
+              codeLink="https://github.com/AlexMagargiu/React-Notes-App"
+              liveLink="https://alexmagargiu.github.io/React-Notes-App/"
             />
             <Projects 
               img={toDoAppImg} 
@@ -59,6 +69,7 @@ export default function App() {
               liveLink="https://alexmagargiu.github.io/FM-Sign-Up-Form/"
             />
       </section>
+      <Contact />
     </main>
   )
 }

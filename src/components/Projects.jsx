@@ -14,7 +14,7 @@ export default function Projects(props){
     }
 
     return(
-            <div className="flex flex-col flex-wrap items-center justify-center max-w-2xl p-4 bg-white rounded-2xl" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className="flex flex-col flex-wrap items-center justify-center max-w-2xl h-[19.5rem] p-4 bg-white rounded-2xl" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <img src={props.img} className="max-w-sm rounded-2xl relative"></img>
                 {hover && (
                     <div className="absolute flex flex-col items-center justify-end bg-navy-blue bg-opacity-50 w-[26rem] h-[19.5rem] rounded-2xl">
