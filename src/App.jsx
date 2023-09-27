@@ -10,6 +10,7 @@ import signUpFormImg from "./assets/projectPhotos/signUpForm.jpg"
 import portfolioImg from "./assets/projectPhotos/portfolio.png"
 import notesAppImg from "./assets/projectPhotos/notesApp.png"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 export default function App() {
   return (
@@ -70,6 +71,7 @@ export default function App() {
             />
       </section>
       <Contact />
+      <Footer />
     </main>
   )
 }
