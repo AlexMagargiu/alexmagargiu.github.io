@@ -3,7 +3,7 @@ import emailImg from "../assets/svg/email.svg"
 
 export default function Contact(){
     return(
-        <section className="flex flex-col px-64 py-24 font-jetbrains text-navy">
+        <section className="flex flex-col px-64 py-24 font-jetbrains text-navy" id="contact">
             <h3 className="text-2xl font-bold">CONTACT</h3>
             <h4 className="text-4xl text-navy-blue-soft mb-12 font-bold">Hit me up!👇</h4>
             <div className="flex items-center gap-32">
