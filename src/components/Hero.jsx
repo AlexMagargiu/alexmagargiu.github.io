@@ -1,8 +1,8 @@
 import { TypeAnimation } from 'react-type-animation';
-import githublogo from '../assets/github.svg'
-import linkedinlogo from '../assets/linkedin.svg'
-import emaillogo from '../assets/email.svg'
-import profilepicture from '../assets/profilepicture.jpg'
+import githublogo from '../assets/svg/github.svg'
+import linkedinlogo from '../assets/svg/linkedin.svg'
+import emaillogo from '../assets/svg/email.svg'
+import profilepicture from '../assets/images/profilepicture.jpg'
 
 export default function Hero(){
     return(

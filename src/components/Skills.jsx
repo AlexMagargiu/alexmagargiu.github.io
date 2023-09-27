@@ -1,8 +1,8 @@
-import html5 from "../assets/html5.svg"
-import css3 from "../assets/css3.svg"
-import javascript from "../assets/javascript.svg"
-import reactlogo from "../assets/react.svg"
-import tailwind from "../assets/tailwind.svg"
+import html5 from "../assets/svg/html5.svg"
+import css3 from "../assets/svg/css3.svg"
+import javascript from "../assets/svg/javascript.svg"
+import reactlogo from "../assets/svg/react.svg"
+import tailwind from "../assets/svg/tailwind.svg"
 
 export default function Skills(){
     return(

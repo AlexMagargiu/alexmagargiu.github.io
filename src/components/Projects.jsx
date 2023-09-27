@@ -1,6 +1,6 @@
 import { useState } from "react"
-import newpage from "../assets/newpage.svg"
-import githubwhitelogo from "../assets/githubwhite.svg"
+import newpage from "../assets/svg/newpage.svg"
+import githubwhitelogo from "../assets/svg/githubwhite.svg"
 
 export default function Projects(props){
     const [hover, setHover] = useState(false)

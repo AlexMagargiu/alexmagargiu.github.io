@@ -1,5 +1,5 @@
-import mapMarkerImg from "../assets/mapmarker.png"
-import emailImg from "../assets/email.svg"
+import mapMarkerImg from "../assets/svg/mapmarker.png"
+import emailImg from "../assets/svg/email.svg"
 
 export default function Contact(){
     return(

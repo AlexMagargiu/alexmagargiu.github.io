@@ -1,4 +1,4 @@
-import webimg from "../assets/webdev.png"
+import webimg from "../assets/images/webdev.png"
 
 export default function About(){
     return(
