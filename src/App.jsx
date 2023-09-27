@@ -19,7 +19,7 @@ export default function App() {
       <Hero />
       <About />
       <Skills />
-      <h3 className="text-navy text-3xl py-8 bg-medium-gray flex justify-center" id="projects">Projects</h3>
+      <h3 className="text-navy text-3xl py-24 bg-medium-gray flex justify-center" id="projects">Projects</h3>
       <section className="flex flex-wrap items-center justify-center px-10 pb-20 gap-20 text-white font-jetbrains bg-medium-gray">
             <Projects 
               img={portfolioImg} 

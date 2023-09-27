@@ -6,7 +6,7 @@ import profilepicture from '../assets/images/profilepicture.jpg'
 
 export default function Hero(){
     return(
-        <section className='flex items-center justify-center gap-56 h-[calc(100vh-80px)] bg-medium-gray font-jetbrains text-navy' id="home">
+        <section className='flex items-center justify-center gap-56 h-screen bg-medium-gray font-jetbrains text-navy' id="home">
             <div>
                 <span className='flex items-center gap-3'>
                     <a href='https://github.com/AlexMagargiu' target='_blank'><img className="h-8 mb-2" src={githublogo}></img></a>

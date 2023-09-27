@@ -7,7 +7,7 @@ import tailwind from "../assets/svg/tailwind.svg"
 export default function Skills(){
     return(
         <section className="flex flex-col items-center justify-center bg-navy text-light-gray font-jetbrains" id="skills">
-            <div className="flex items-center justify-around w-full p-12">
+            <div className="flex items-center justify-around w-full px-12 py-28">
                 <div className="flex flex-col items-center justify-center gap-2 w-44">
                     <img src={html5} className="h-16 w-16"></img>
                     <h4 className="text-2xl">HTML</h4>
