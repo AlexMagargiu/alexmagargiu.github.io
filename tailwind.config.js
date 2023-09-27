@@ -19,6 +19,9 @@ export default {
     fontFamily: {
       jetbrains: ["JetBrains Mono", "sans-serif"]
     },
+    animation: {
+      "middle": "all ease-in-out .2s"
+    },
   },
   plugins: [],
 }

@@ -9,8 +9,8 @@ export default function Hero(){
         <section className='flex items-center justify-center gap-56 h-screen bg-medium-gray font-jetbrains text-navy' id="home">
             <div>
                 <span className='flex items-center gap-3'>
-                    <a href='https://github.com/AlexMagargiu' target='_blank'><img className="h-8 mb-2" src={githublogo}></img></a>
-                    <a href='https://www.linkedin.com/in/alexandru-magargiu-b47833292/' target='_blank'><img className="h-8 mb-2" src={linkedinlogo}></img></a>
+                    <a href='https://github.com/AlexMagargiu' target='_blank'><img className="h-8 mb-2 duration-150" src={githublogo}></img></a>
+                    <a href='https://www.linkedin.com/in/alexandru-magargiu-b47833292/' target='_blank'><img className="h-8 mb-2 duration-150" src={linkedinlogo}></img></a>
                         <div className='flex items-center gap-2 border-2 border-navy rounded-3xl px-3 py-1 mb-2'>
                             <a href='mailto:alexandrumaga2000@gmail.com'>
                                 <img src={emaillogo} className="h-6"></img>
