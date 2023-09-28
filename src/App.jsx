@@ -11,11 +11,39 @@ import portfolioImg from "./assets/projectPhotos/portfolio.png"
 import notesAppImg from "./assets/projectPhotos/notesApp.png"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import { useState } from "react"
 
 export default function App() {
+  const [styles, setStyles] = useState("light")
+
+  const theme ={
+    dark: {
+      id:"dark",
+      background_none: "bg-black",
+      background_light: "bg-light-dark-gray",
+      background_medium: "bg-dark-gray",
+      background_dark: "bg-muted-blue",
+      text: "text-bluish-white",
+      special_text: "text-bluish-white",
+      hover: "hover:text-orange",
+      hover_border: "hover:border-orange",
+    },
+    light: {
+      id:"light",
+      background_none: "bg-white",
+      background_light: "bg-light-gray",
+      background_medium: "bg-medium-gray",
+      background_dark: "bg-navy",
+      text: "text-navy",
+      special_text: "text-navy-soft",
+      hover: "hover:text-navy-blue",
+      hover_border: "hover:border-navy-blue",
+    }
+  }
+
   return (
     <main>
-      <Navbar />
+      <Navbar setStyles={setStyles} styles={theme[styles]} />
       <Hero />
       <About />
       <Skills />

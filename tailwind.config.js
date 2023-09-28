@@ -13,7 +13,14 @@ export default {
         "gray-navy" : "#495464",
         "navy" : "#0E2954",
         "navy-blue" : "#279EFF",
-        "navy-blue-soft": "#35A29F"
+        "navy-blue-soft": "#35A29F",
+        "light-dark-gray": "#393E46",
+        "dark-gray": "#121212",
+        "bluish-white": "#D8DEEC",
+        "orange": "#D65A31",
+        "gold": "#FFD700",
+        "muted-blue": "#5B8AB3",
+        "muted-gray": "#A9A9A9"
       },
     },
     fontFamily: {
