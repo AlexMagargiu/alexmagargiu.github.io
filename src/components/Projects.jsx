@@ -1,6 +1,6 @@
 import { useState } from "react"
-import newpage from "../assets/svg/newpage.svg"
-import githubwhitelogo from "../assets/svg/githubwhite.svg"
+import { FaArrowUpRightFromSquare } from "react-icons/fa6"
+import { FaGithub } from 'react-icons/fa';
 
 export default function Projects(props){
     const [hover, setHover] = useState(false)
@@ -19,12 +19,16 @@ export default function Projects(props){
                 {hover && (
                     <div className="absolute flex flex-col items-center justify-end bg-navy-blue bg-opacity-50 w-[26rem] h-[19.5rem] rounded-2xl">
                         <div className="flex items-center justify-center gap-8 mb-12">
-                            <div className="flex flex-col items-center gap-1">
-                                <a href={props.codeLink}><img src={githubwhitelogo} className="w-8 h-8"></img></a>
+                            <div className="flex flex-col items-center gap-1 opacity-70 hover:opacity-100 duration-300">
+                                <a href={props.codeLink}>
+                                    <FaGithub className="w-8 h-8" />
+                                </a>
                                 <p>Code</p>
                             </div>
-                            <div className="flex flex-col items-center gap-1">
-                            <a href={props.liveLink}><img src={newpage} className="w-8 h-8"></img></a>
+                            <div className="flex flex-col items-center gap-1 opacity-70 hover:opacity-100 duration-300">
+                            <a href={props.liveLink}>
+                                <FaArrowUpRightFromSquare className="w-8 h-8" />
+                            </a>
                                 <p>Live</p>
                             </div>
                         </div>

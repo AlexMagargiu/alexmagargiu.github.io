@@ -10,14 +10,14 @@ export default function Hero(){
             <div>
                 <span className='flex items-center gap-3 mb-2'>
                     <a href='https://github.com/AlexMagargiu' target='_blank'>
-                        <FaGithub className="h-7 w-7 hover:fill-navy-blue"/>
+                        <FaGithub className="h-7 w-7 hover:fill-navy-blue hover:duration-200"/>
                     </a>
                     <a href='https://www.linkedin.com/in/alexandru-magargiu-b47833292/' target='_blank'>
-                        <FaLinkedinIn className="h-7 w-7 hover:fill-navy-blue"/>
+                        <FaLinkedinIn className="h-7 w-7 hover:fill-navy-blue hover:duration-200"/>
                     </a>
                         <div className='flex items-center gap-2 border-2 border-navy rounded-3xl px-3 py-1'>
                             <a href='mailto:alexandrumaga2000@gmail.com'>
-                                <FaRegEnvelope className="h-5 w-5 hover:fill-navy-blue"/>
+                                <FaRegEnvelope className="h-5 w-5 hover:fill-navy-blue hover:duration-200"/>
                             </a>
                             <p>alexandrumaga2000@gmail.com</p>
                         </div>

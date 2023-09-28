@@ -1,5 +1,5 @@
-import mapMarkerImg from "../assets/svg/mapmarker.png"
-import emailImg from "../assets/svg/email.svg"
+import { LiaMapMarkedAltSolid } from "react-icons/lia"
+import { FaRegEnvelope } from "react-icons/fa"
 
 export default function Contact(){
     return(
@@ -9,7 +9,9 @@ export default function Contact(){
             <div className="flex items-center gap-32">
                 <div>
                     <div className="flex items-center gap-4">
-                        <img src={mapMarkerImg} className="w-12 h-12 border-2 border-navy-blue-soft rounded-full p-1"></img>
+                        <div className="border-2 border-navy-blue-soft rounded-full p-1">
+                            <LiaMapMarkedAltSolid className="w-10 h-10" />
+                        </div>
                         <div>
                             <h4 className="text-2xl text-navy-blue-soft font-extrabold">Location</h4>
                             <p className="text-lg">Arad, Romania</p>
@@ -18,7 +20,9 @@ export default function Contact(){
                 </div>
                 <div>
                     <div className="flex items-center gap-4">
-                        <img src={emailImg} className="w-12 h-12 border-2 border-navy-blue-soft rounded-full p-1"></img>
+                        <div className="border-2 border-navy-blue-soft rounded-full p-2">
+                            <FaRegEnvelope className="w-8 h-8" />
+                        </div>
                         <div>
                             <h4 className="text-2xl text-navy-blue-soft font-extrabold">Email</h4>
                             <a href="mailto:alexandrumaga2000@gmail.com"><p className="text-lg">alexandrumaga2000@gmail.com</p></a>

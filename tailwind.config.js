@@ -23,6 +23,8 @@ export default {
       "middle": "all ease-in-out .2s"
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 
