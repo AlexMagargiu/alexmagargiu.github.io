@@ -1,19 +1,23 @@
 import { TypeAnimation } from 'react-type-animation';
-import githublogo from '../assets/svg/github.svg'
-import linkedinlogo from '../assets/svg/linkedin.svg'
-import emaillogo from '../assets/svg/email.svg'
 import profilepicture from '../assets/images/profilepicture.jpg'
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn } from "react-icons/fa"
+import { FaRegEnvelope } from "react-icons/fa"
 
 export default function Hero(){
     return(
         <section className='flex items-center justify-center gap-56 h-screen bg-medium-gray font-jetbrains text-navy' id="home">
             <div>
-                <span className='flex items-center gap-3'>
-                    <a href='https://github.com/AlexMagargiu' target='_blank'><img className="h-8 mb-2 duration-150" src={githublogo}></img></a>
-                    <a href='https://www.linkedin.com/in/alexandru-magargiu-b47833292/' target='_blank'><img className="h-8 mb-2 duration-150" src={linkedinlogo}></img></a>
-                        <div className='flex items-center gap-2 border-2 border-navy rounded-3xl px-3 py-1 mb-2'>
+                <span className='flex items-center gap-3 mb-2'>
+                    <a href='https://github.com/AlexMagargiu' target='_blank'>
+                        <FaGithub className="h-7 w-7 hover:fill-navy-blue"/>
+                    </a>
+                    <a href='https://www.linkedin.com/in/alexandru-magargiu-b47833292/' target='_blank'>
+                        <FaLinkedinIn className="h-7 w-7 hover:fill-navy-blue"/>
+                    </a>
+                        <div className='flex items-center gap-2 border-2 border-navy rounded-3xl px-3 py-1'>
                             <a href='mailto:alexandrumaga2000@gmail.com'>
-                                <img src={emaillogo} className="h-6"></img>
+                                <FaRegEnvelope className="h-5 w-5 hover:fill-navy-blue"/>
                             </a>
                             <p>alexandrumaga2000@gmail.com</p>
                         </div>
