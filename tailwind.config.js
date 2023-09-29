@@ -7,20 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        "light-gray" : "#F4F4F2",
-        "medium-gray" : "#E8E8E8",
-        "gray" : "#BBBFCA",
-        "gray-navy" : "#495464",
-        "navy" : "#0E2954",
-        "navy-blue" : "#279EFF",
-        "navy-blue-soft": "#35A29F",
-        "light-dark-gray": "#393E46",
-        "dark-gray": "#121212",
-        "bluish-white": "#D8DEEC",
-        "orange": "#D65A31",
-        "gold": "#FFD700",
-        "muted-blue": "#5B8AB3",
-        "muted-gray": "#A9A9A9"
+        "nav-bg" : "var(--bg-nav)",
+        "medium-bg" : "var(--bg-medium)",
+        "none-bg" : "var(--bg-none)",
+        "dark-bg" : "var(--bg-dark)",
+        "hover-bg" : "var(--bg-hover)",
+        "hover-bg-50": "var(--bg-hover-50)",
+        "primary-text" : "var(--primary-text)",
+        "hover-text" : "var(--hover-text)",
+        "secondary-text" : "var(--secondary-text)",
+        "sun-fill" : "var(--sun-fill)",
+        "moon-fill" : "var(--moon-fill)",
+        "footer-text" : "var(--footer-text)",
       },
     },
     fontFamily: {

@@ -30,10 +30,6 @@ export default function Navbar(props) {
         );
     }
 
-    /* nav = props.styles.background_light props.styles.text
-    nav > h3 = props.styles.hover
-    div > button = props.styles.background_dark */
-
     return (
         <>
             <nav className="font-jetbrains flex items-center justify-between bg-nav-bg text-primary-text p-6 md:px-14 md:py-6 fixed z-30 w-full">
