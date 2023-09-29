@@ -1,46 +1,48 @@
-import { TypeAnimation } from 'react-type-animation';
-import profilepicture from '../assets/images/profilepicture.jpg'
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedinIn } from "react-icons/fa"
-import { FaRegEnvelope } from "react-icons/fa"
+import { TypeAnimation } from "react-type-animation";
+import profilepicture from "../assets/images/profilepicture.jpg";
+import HeroLinkItems from "./HeroLinkItems";
 
-export default function Hero(){
-    return(
-        <section className='flex items-center justify-center gap-56 h-screen bg-medium-gray font-jetbrains text-navy' id="home">
-            <div>
-                <span className='flex items-center gap-3 mb-2'>
-                    <a href='https://github.com/AlexMagargiu' target='_blank'>
-                        <FaGithub className="h-7 w-7 hover:fill-navy-blue hover:duration-200"/>
-                    </a>
-                    <a href='https://www.linkedin.com/in/alexandru-magargiu-b47833292/' target='_blank'>
-                        <FaLinkedinIn className="h-7 w-7 hover:fill-navy-blue hover:duration-200"/>
-                    </a>
-                        <div className='flex items-center gap-2 border-2 border-navy rounded-3xl px-3 py-1'>
-                            <a href='mailto:alexandrumaga2000@gmail.com'>
-                                <FaRegEnvelope className="h-5 w-5 hover:fill-navy-blue hover:duration-200"/>
-                            </a>
-                            <p>alexandrumaga2000@gmail.com</p>
-                        </div>
-                </span>
-                <h1 className='flex flex-col items-start text-2xl'>Hello, I'm<span className='font-extrabold text-5xl'>Magargiu <span className='text-navy-blue-soft'>Alexandru</span></span></h1>
+export default function Hero() {
+    return (
+        <section
+            className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-56 h-screen bg-medium-bg font-jetbrains text-primary-text"
+            id="home"
+        >
+            <div className="md:block flex flex-col items-center">
+                <div className="md:block hidden">
+                    <HeroLinkItems />
+                </div>
+                <h1 className="flex flex-col items-center md:items-start text-xl md:text-2xl">
+                    Hello, I'm
+                    <span className="font-extrabold text-4xl md:text-5xl">
+                        Magargiu{" "}
+                        <span className="text-secondary-text">Alexandru</span>
+                    </span>
+                </h1>
                 <TypeAnimation
                     sequence={[
-                        'A Frontend Web Developer',
-                        1000, 
-                        'A Web Designer',
+                        "A Frontend Web Developer",
                         1000,
-                        'A UX Developer',
-                        1000
+                        "A Web Designer",
+                        1000,
+                        "A UX Developer",
+                        1000,
                     ]}
-                wrapper="span"
-                speed={50}
-                style={{ fontSize: '2em', display: 'inline-block'}}
-                repeat={Infinity}
+                    wrapper="span"
+                    speed={30}
+                    style={{ fontSize: "2em", display: "inline-block" }}
+                    repeat={Infinity}
                 />
             </div>
-            <div className='h-[26rem] w-[26rem] drop-shadow-[0_5px_10px_rgba(53,_162,_159,_0.7)]'>
-                <img className='rounded-[3.5rem]' src={profilepicture}></img>
+            <div className="h-96 w-96 md:h-[26rem] md:w-[26rem] drop-shadow-[0_5px_10px_rgba(53,_162,_159,_0.7)]">
+                <img
+                    className="rounded-full md:rounded-[3.5rem]"
+                    src={profilepicture}
+                ></img>
+            </div>
+            <div className="md:hidden">
+                <HeroLinkItems />
             </div>
         </section>
-    )
+    );
 }
