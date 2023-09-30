@@ -15,7 +15,7 @@ export default function Projects(props) {
 
     return (
         <div
-            className="flex flex-col flex-wrap items-center justify-center max-w-2xl h-[19.5rem] p-4 bg-none-bg rounded-2xl"
+            className="flex flex-col flex-wrap items-center justify-center max-w-2xl h-[19.5rem] p-4 bg-projects rounded-2xl"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

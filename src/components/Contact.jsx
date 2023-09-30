@@ -4,7 +4,7 @@ import { FaRegEnvelope } from "react-icons/fa";
 export default function Contact() {
     return (
         <section
-            className="flex flex-col md:px-64 md:py-24 font-jetbrains text-primary-text"
+            className="flex flex-col md:px-64 md:py-24 font-jetbrains text-primary-text bg-none-bg"
             id="contact"
         >
             <h3 className="text-2xl font-bold">CONTACT</h3>

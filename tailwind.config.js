@@ -19,6 +19,8 @@ export default {
         "sun-fill" : "var(--sun-fill)",
         "moon-fill" : "var(--moon-fill)",
         "footer-text" : "var(--footer-text)",
+        "svg" : "var(--skills-svg)",
+        "projects" : "var(--bg-projects)"
       },
     },
     fontFamily: {

@@ -7,7 +7,7 @@ import { SiTailwindcss } from "react-icons/si";
 export default function Skills() {
     return (
         <section
-            className="flex flex-col items-center justify-center bg-dark-bg text-nav-bg font-jetbrains"
+            className="flex flex-col items-center justify-center bg-dark-bg text-svg font-jetbrains"
             id="skills"
         >
             <div className="flex items-center justify-around w-full px-12 py-28">

@@ -14,7 +14,7 @@ export default function HeroLinkItems() {
             >
                 <FaLinkedinIn className="h-7 w-7 hover:fill-hover-text hover:duration-200" />
             </a>
-            <div className="flex items-center gap-2 border-2 border-dark-bg rounded-3xl px-3 py-1">
+            <div className="flex items-center gap-2 border-2 border-primary-text rounded-3xl px-3 py-1">
                 <a href="mailto:alexandrumaga2000@gmail.com">
                     <FaRegEnvelope className="h-5 w-5 hover:fill-hover-text hover:duration-200" />
                 </a>
