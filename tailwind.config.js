@@ -20,7 +20,7 @@ export default {
         "moon-fill" : "var(--moon-fill)",
         "footer-text" : "var(--footer-text)",
         "svg" : "var(--skills-svg)",
-        "projects" : "var(--bg-projects)"
+        "projects" : "var(--bg-projects)",
       },
     },
     fontFamily: {

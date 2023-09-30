@@ -15,7 +15,17 @@ import { useState } from "react";
 import Cookies from "universal-cookie";
 
 export default function App() {
-    const [styles, setStyles] = useState("light");
+    const cookies = new Cookies();
+
+    if (!cookies.get("theme")) {
+        cookies.set("theme", "light", {
+            path: "/",
+            sameSite: "strict",
+            expires: new Date(new Date().getFullYear() + 1, 0, 1),
+        });
+    }
+
+    const [styles, setStyles] = useState(cookies.get("theme"));
 
     /*     darkmode: 
     "--light-dark-gray": "#393E46",
@@ -67,15 +77,6 @@ export default function App() {
         document.documentElement.style.setProperty(cssVar, theme[cssVar]);
     });
 
-    const cookies = new Cookies();
-    if (!cookies.get("theme")) {
-        cookies.set("theme", "light", {
-            path: "/",
-            sameSite: "strict",
-            expires: new Date(new Date().getFullYear() + 1, 0, 1),
-        });
-    }
-
     return (
         <main>
             <Navbar setStyles={setStyles} />
@@ -83,12 +84,12 @@ export default function App() {
             <About />
             <Skills />
             <h3
-                className="text-primary-text text-3xl py-24 bg-medium-bg flex justify-center"
+                className="text-primary-text text-3xl p-6 md:py-24 bg-medium-bg flex justify-center"
                 id="projects"
             >
                 Projects
             </h3>
-            <section className="flex flex-wrap items-center justify-center px-10 pb-20 gap-20 text-white font-jetbrains bg-medium-bg">
+            <section className="flex flex-wrap items-center justify-center px-10 md:pb-20 pb-8 gap-8 md:gap-20 text-white font-jetbrains bg-medium-bg">
                 <Projects
                     img={portfolioImg}
                     framework={true}
