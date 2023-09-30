@@ -15,16 +15,16 @@ export default function Projects(props) {
 
     return (
         <div
-            className="flex flex-col flex-wrap items-center justify-center max-w-2xl h-[19.5rem] p-4 bg-projects rounded-2xl"
+            className="flex flex-col flex-wrap items-center justify-center w-80 md:w-[26rem] md:h-[19.5rem] p-4 bg-projects rounded-2xl"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
             <img
                 src={props.img}
-                className="max-w-sm rounded-2xl relative"
+                className="w-72 md:w-96 rounded-2xl relative"
             ></img>
             {hover && (
-                <div className="absolute flex flex-col items-center justify-end bg-hover-bg-50 w-[26rem] h-[19.5rem] rounded-2xl">
+                <div className="absolute flex flex-col items-center justify-end bg-hover-bg-50 w-[17.5rem] md:w-[26rem] md:h-[19.5rem] rounded-2xl">
                     <div className="flex items-center justify-center gap-8 mb-12">
                         <div className="flex flex-col items-center gap-1 opacity-70 hover:opacity-100 duration-300">
                             <a href={props.codeLink}>

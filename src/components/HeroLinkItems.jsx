@@ -4,7 +4,7 @@ import { FaRegEnvelope } from "react-icons/fa";
 
 export default function HeroLinkItems() {
     return (
-        <span className="flex items-center justify-center md:justify-start gap-3 mb-2">
+        <span className="flex items-center justify-center flex-wrap md:flex-nowrap md:justify-start gap-3 mb-2">
             <a href="https://github.com/AlexMagargiu" target="_blank">
                 <FaGithub className="h-7 w-7 hover:fill-hover-text hover:duration-200" />
             </a>
