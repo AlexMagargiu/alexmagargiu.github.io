@@ -18,7 +18,9 @@ export default function HeroLinkItems() {
                 <a href="mailto:alexandrumaga2000@gmail.com">
                     <FaRegEnvelope className="h-5 w-5 hover:fill-hover-text hover:duration-200" />
                 </a>
-                <p>alexandrumaga2000@gmail.com</p>
+                <p className="text-sm md:text-base">
+                    alexandrumaga2000@gmail.com
+                </p>
             </div>
         </span>
     );
