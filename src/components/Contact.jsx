@@ -13,12 +13,12 @@ export default function Contact() {
             </h4>
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-32">
                 <div>
-                    <div className="flex items-center gap-4">
+                    <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4">
                         <div className="border-2 border-secondary-text rounded-full p-1">
                             <LiaMapMarkedAltSolid className="w-8 h-8 md:w-10 md:h-10" />
                         </div>
                         <div>
-                            <h4 className="text-xl md:text-2xl text-secondary-text font-extrabold">
+                            <h4 className="text-xl md:text-2xl text-secondary-text font-extrabold text-center md:text-start">
                                 Location
                             </h4>
                             <p className="text-sm md:text-lg">Arad, Romania</p>
@@ -26,12 +26,12 @@ export default function Contact() {
                     </div>
                 </div>
                 <div>
-                    <div className="flex items-center gap-4">
+                    <div className="flex flex-col md:flex-row items-center gap-1 md:gap-4">
                         <div className="border-2 border-secondary-text rounded-full p-2">
                             <FaRegEnvelope className="w-6 h-6 md:w-8 md:h-8" />
                         </div>
                         <div>
-                            <h4 className="text-xl md:text-2xl text-secondary-text font-extrabold">
+                            <h4 className="text-xl md:text-2xl text-secondary-text font-extrabold text-center md:text-start">
                                 Email
                             </h4>
                             <a href="mailto:alexandrumaga2000@gmail.com">
