@@ -5,10 +5,10 @@ import HeroLinkItems from "./HeroLinkItems";
 export default function Hero() {
     return (
         <section
-            className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-56 md:h-screen bg-medium-bg font-jetbrains text-primary-text"
+            className="flex flex-col flex-wrap md:flex-nowrap lg:flex-row items-center justify-center gap-10 xl:gap-56 h-screen bg-medium-bg font-jetbrains text-primary-text"
             id="home"
         >
-            <div className="md:block flex flex-col items-center">
+            <div className="md:block pt-0 md:pt-32 flex flex-col items-center">
                 <div className="md:block hidden">
                     <HeroLinkItems />
                 </div>

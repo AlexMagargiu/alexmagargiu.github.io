@@ -5,20 +5,44 @@ import { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Navbar(props) {
-    const [open, setOpen] = useState(false);
+    let [open, setOpen] = useState(false);
 
     function toggleNavbar() {
         setOpen(!open);
     }
 
+    function closeNavbar() {
+        setOpen(false);
+    }
+
     function NavListItems() {
         return (
             <>
-                <NavListItem link="#home" title="Home" />
-                <NavListItem link="#about" title="About Me" />
-                <NavListItem link="#skills" title="Skills" />
-                <NavListItem link="#projects" title="Projects" />
-                <NavListItem link="#contact" title="Contact" />
+                <NavListItem
+                    link="#home"
+                    title="Home"
+                    closeNavbar={closeNavbar}
+                />
+                <NavListItem
+                    link="#about"
+                    title="About Me"
+                    closeNavbar={closeNavbar}
+                />
+                <NavListItem
+                    link="#skills"
+                    title="Skills"
+                    closeNavbar={closeNavbar}
+                />
+                <NavListItem
+                    link="#projects"
+                    title="Projects"
+                    closeNavbar={closeNavbar}
+                />
+                <NavListItem
+                    link="#contact"
+                    title="Contact"
+                    closeNavbar={closeNavbar}
+                />
             </>
         );
     }
@@ -48,7 +72,7 @@ export default function Navbar(props) {
                 </div>
             </nav>
             {open && (
-                <div className="flex flex-col">
+                <div className="flex flex-col items-center bg-nav-bg list-none text-lg gap-2 pb-2 text-primary-text">
                     <NavListItems />
                 </div>
             )}

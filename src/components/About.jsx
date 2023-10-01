@@ -3,7 +3,7 @@ import webimg from "../assets/images/webdev.png";
 export default function About() {
     return (
         <section
-            className="flex md:flex-row flex-col items-center justify-center md:gap-36 bg-none-bg md:h-[calc(100vh-200px)] font-jetbrains text-primary-text"
+            className="flex md:flex-row flex-col flex-wrap h-fit items-center justify-center py-20 md:gap-36 bg-none-bg font-jetbrains text-primary-text"
             id="about"
         >
             <img
