@@ -29,7 +29,9 @@ export default function Skills() {
                 </div>
                 <div className="flex flex-col items-center justify-center gap-2 w-36 md:w-44 hover:translate-y-[-1rem] duration-500 ease-in-out">
                     <SiTailwindcss className="h-12 w-12 md:h-16 md:w-16" />
-                    <h4 className="text-base md:text-2xl">Tailwind CSS</h4>
+                    <h4 className="text-base md:text-2xl whitespace-nowrap">
+                        Tailwind CSS
+                    </h4>
                 </div>
             </div>
         </section>

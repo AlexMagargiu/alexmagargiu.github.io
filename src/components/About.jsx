@@ -3,14 +3,14 @@ import webimg from "../assets/images/webdev.png";
 export default function About() {
     return (
         <section
-            className="flex md:flex-row flex-col flex-wrap h-fit items-center justify-center py-20 md:gap-36 bg-none-bg font-jetbrains text-primary-text"
+            className="flex md:flex-row flex-col flex-wrap h-fit items-center justify-center py-20 lg:gap-10 xl:gap-36 bg-none-bg font-jetbrains text-primary-text"
             id="about"
         >
             <img
                 src={webimg}
-                className="rounded-[2rem] md:rounded-[4rem] md:w-auto md:h-auto md:mt-0 mt-10 w-[317px] h-[250px] drop-shadow-[0_3px_3px_var(--secondary-text)]"
+                className="rounded-[2rem] lg:rounded-[4rem] lg:w-auto lg:h-auto lg:mt-0 mt-10 w-[317px] h-[250px] drop-shadow-[0_3px_3px_var(--secondary-text)]"
             ></img>
-            <div className="flex flex-col md:items-start items-center justify-center gap-6 md:gap-2 p-10 md:p-0">
+            <div className="flex flex-col xl:items-start items-center justify-center gap-6 lg:gap-10 xl:gap-2 p-10 lg:p-0">
                 <h3 className="text-3xl md:text-4xl text-secondary-text">
                     About Me
                 </h3>
