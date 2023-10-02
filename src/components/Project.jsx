@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
-export default function Projects(props) {
+export default function Project(props) {
     const [hover, setHover] = useState(false);
 
     function handleMouseEnter() {

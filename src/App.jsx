@@ -2,13 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import toDoAppImg from "./assets/projectPhotos/toDoApp.jpg";
-import calculatorAppImg from "./assets/projectPhotos/calculatorApp.jpg";
-import tipAppImg from "./assets/projectPhotos/tipApp.jpg";
-import signUpFormImg from "./assets/projectPhotos/signUpForm.jpg";
-import portfolioImg from "./assets/projectPhotos/portfolio.png";
-import notesAppImg from "./assets/projectPhotos/notesApp.png";
+import ProjectList from "./components/ProjectList";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useState } from "react";
@@ -26,15 +20,6 @@ export default function App() {
     }
 
     const [styles, setStyles] = useState(cookies.get("theme"));
-
-    /*     darkmode: 
-    "--light-dark-gray": "#393E46",
-    "--dark-gray": "#121212",
-    "--bluish-white": "#D8DEEC",
-    "--orange": "#D65A31",
-    "--gold": "#FFD700",
-    "--muted-blue": "#5B8AB3",
-    "--muted-gray": "#A9A9A9", */
 
     const themeOptions = {
         dark: {
@@ -83,64 +68,7 @@ export default function App() {
             <Hero />
             <About />
             <Skills />
-            <section
-                className="flex flex-col items-center justify-center py-20 gap-4 md:gap-8 text-white font-jetbrains bg-medium-bg"
-                id="projects"
-            >
-                <h3 className="text-primary-text text-3xl p-8 bg-medium-bg flex justify-center">
-                    Projects
-                </h3>
-                <div className="flex flex-wrap items-center justify-center px-10 md:pb-20 pb-8 gap-8 md:gap-20 text-white font-jetbrains bg-medium-bg">
-                    <Projects
-                        img={portfolioImg}
-                        framework={true}
-                        tailwind={true}
-                        title="Portfolio"
-                        codeLink="https://github.com/AlexMagargiu/alexmagargiu.github.io"
-                        liveLink="https://alexmagargiu.github.io/"
-                    />
-                    <Projects
-                        img={notesAppImg}
-                        framework={true}
-                        tailwind={false}
-                        title="Notes App"
-                        codeLink="https://github.com/AlexMagargiu/React-Notes-App"
-                        liveLink="https://alexmagargiu.github.io/React-Notes-App/"
-                    />
-                    <Projects
-                        img={toDoAppImg}
-                        framework={false}
-                        tailwind={false}
-                        title="ToDo App"
-                        codeLink="https://github.com/AlexMagargiu/FM-TD-App"
-                        liveLink="https://alexmagargiu.github.io/FM-TD-App/"
-                    />
-                    <Projects
-                        img={calculatorAppImg}
-                        framework={false}
-                        tailwind={false}
-                        title="Calculator App"
-                        codeLink="https://github.com/AlexMagargiu/FM-Calculator-App"
-                        liveLink="https://alexmagargiu.github.io/FM-Calculator-App/"
-                    />
-                    <Projects
-                        img={tipAppImg}
-                        framework={false}
-                        tailwind={false}
-                        title="Tip Calculator App"
-                        codeLink="https://github.com/AlexMagargiu/FM-Tip-Calculator"
-                        liveLink="https://alexmagargiu.github.io/FM-Tip-Calculator/"
-                    />
-                    <Projects
-                        img={signUpFormImg}
-                        framework={false}
-                        tailwind={false}
-                        title="Sign Up Form"
-                        codeLink="https://github.com/AlexMagargiu/FM-Sign-Up-Form"
-                        liveLink="https://alexmagargiu.github.io/FM-Sign-Up-Form/"
-                    />
-                </div>
-            </section>
+            <ProjectList />
             <Contact />
             <Footer />
         </main>
